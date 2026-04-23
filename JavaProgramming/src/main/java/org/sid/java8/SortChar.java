@@ -6,6 +6,9 @@ public class SortChar {
 
     public static void main(String[] args) {
         String str = "supriyapatil";
-        str.chars().mapToObj(c->(char)c).sorted(Character::compare).forEach(System.out::print);
+        str.chars()
+                .mapToObj(c->(char)c)
+                .sorted(Character::compare)
+                .forEach(System.out::print);
     }
 }
